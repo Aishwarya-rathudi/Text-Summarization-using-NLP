@@ -1,10 +1,27 @@
 # 📘 End-to-End Text Summarizer Project using NLP  
 
-This project implements an **NLP-powered Text Summarizer** pipeline with **AWS CICD Deployment** using GitHub Actions.
+📌 Project Description
 
-The solution leverages **Docker, ECR, EC2, and GitHub Actions** for automated build, versioning, and deployment.  
+This project implements an NLP-based Text Summarizer that takes long text passages and generates concise summaries. It is built using Hugging Face Transformers and deployed with a complete MLOps workflow including modular pipelines, configuration management, and cloud deployment via AWS with CI/CD pipelines.
+The project is structured into stages (pipelines) for data transformation, model training, and prediction, making it highly scalable, reproducible, and production-ready.
 
 ---
+
+## flowchart TD
+
+    A[📂 Raw Data] --> B[🔄 Data Transformation<br>(📝 Tokenization, Padding)]
+    
+    B --> C[🧠 Model Training<br>(⚙️ Fine-tune Transformer Model)]
+    
+    C --> D[💾 Save Model Artifacts]
+    
+    D --> E[⚡ Prediction Pipeline<br>(✂️ Summarization Inference)]
+    
+    E --> F[🐳 Dockerized App]
+    
+    F --> G[☁️ AWS Deployment<br>(EC2 + ECR)]
+    
+    G --> H[🤖 CI/CD with GitHub Actions]
 
 ## 🔄 Workflows  
 
@@ -25,6 +42,31 @@ The solution leverages **Docker, ECR, EC2, and GitHub Actions** for automated bu
 8. Update the `app.py`  
 
 ---
+## 🛠 Tech Stack
+
+Programming Language: Python
+
+NLP Library: Hugging Face Transformers (AutoTokenizer, pipeline)
+
+Deep Learning: PyTorch / TensorFlow backend (via Transformers)
+
+Configuration Management: YAML (config.yaml, params.yaml)
+
+Logging: Custom logging utilities (logger)
+
+Deployment: AWS EC2, ECR, Docker, GitHub Actions
+
+## 🚀 Key Features
+
+End-to-End Modular Pipelines → Easy to train, transform, and deploy models.
+
+Config-Driven Workflow → Centralized parameters for flexible experimentation.
+
+Prediction API → Real-time summarization via a PredictionPipeline.
+
+MLOps Ready → Integrated with CI/CD pipelines, Docker, AWS for deployment.
+
+Reproducibility → Experiment tracking using configurations and modular design.
 
 # ☁️ AWS CICD Deployment with GitHub Actions  
 
