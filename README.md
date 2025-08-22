@@ -1,6 +1,6 @@
 # 📘 End-to-End Text Summarizer Project using NLP  
 
-📌 Project Description
+## 📌 Project Description
 
 This project implements an NLP-based Text Summarizer that takes long text passages and generates concise summaries. It is built using Hugging Face Transformers and deployed with a complete MLOps workflow including modular pipelines, configuration management, and cloud deployment via AWS with CI/CD pipelines.
 The project is structured into stages (pipelines) for data transformation, model training, and prediction, making it highly scalable, reproducible, and production-ready.
