@@ -144,9 +144,9 @@ AWS_ACCESS_KEY_ID = <your-access-key>
 
 AWS_SECRET_ACCESS_KEY = <your-secret-key>
 
-AWS_REGION = us-east-1
+AWS_REGION
 
-AWS_ECR_LOGIN_URI = 566373416292.dkr.ecr.ap-south-1.amazonaws.com
+AWS_ECR_LOGIN_URI 
 
 ECR_REPOSITORY_NAME = simple-app  
 
